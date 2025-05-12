@@ -1,3 +1,4 @@
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -20,6 +21,10 @@ class LoginProfessorActivity : AppCompatActivity() {
 
             if (usuario.isNotEmpty() && senha.isNotEmpty()) {
                 Toast.makeText(this, "Login do Professor feito com sucesso!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, HomeProfessorActivity::class.java)
+                startActivity(intent)
+                finish()
+
             } else {
                 Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show()
             }

@@ -1,3 +1,4 @@
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -21,6 +22,10 @@ class LoginAlunoActivity : AppCompatActivity() {
             // Simples verificação (só para exemplo)
             if (usuario.isNotEmpty() && senha.isNotEmpty()) {
                 Toast.makeText(this, "Login do Aluno feito com sucesso!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, HomeAlunoActivity::class.java)
+                startActivity(intent)
+                finish()
+
             } else {
                 Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show()
             }

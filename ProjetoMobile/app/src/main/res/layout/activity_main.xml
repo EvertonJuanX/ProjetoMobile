@@ -18,6 +18,7 @@
         android:id="@+id/btnAluno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#2e7d32"
         android:text="Aluno"
         android:layout_marginBottom="16dp" />
 
@@ -25,5 +26,6 @@
         android:id="@+id/btnProfessor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#2e7d32"
         android:text="Professor" />
 </LinearLayout>
